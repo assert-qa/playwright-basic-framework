@@ -14,7 +14,11 @@
     "test:cart": "npx playwright test tests/cart/",
     "test:checkout": "npx playwright test tests/checkout/",
     "test:headed": "npx playwright test --headed",
-    "report": "npx playwright show-report reports/html-report"
+    "report": "npx playwright show-report reports/html-report",
+    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:serve": "allure serve reports/allure-results",
+    "allure:open": "allure open reports/allure-report",
+    "report:allure": "npm run allure:generate"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +26,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.5.0"
+    "@types/node": "^25.5.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.1"
   }
 }

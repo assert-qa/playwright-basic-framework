@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * Feature 4 – Shopping Cart
  * Covers: item added to cart, quantity update, item removal,
@@ -6,7 +5,7 @@
  *
  * Each test re-adds the product in beforeEach so tests are independent.
  */
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../fixtures/reportingHooks');
 
 test.describe('Feature 4 - Shopping Cart @regression', () => {
   test.beforeEach(async ({ page }) => {

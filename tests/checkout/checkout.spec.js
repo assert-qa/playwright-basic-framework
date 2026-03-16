@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * Feature 5 – Checkout Flow
  * Covers: cart → checkout navigation, guest-checkout billing form,
@@ -6,7 +5,7 @@
  *
  * Note: TC_CHK_04 actually places an order on the demo site.
  */
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../fixtures/reportingHooks');
 
 test.describe('Feature 5 - Checkout Flow @regression', () => {
   test.beforeEach(async ({ page }) => {

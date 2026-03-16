@@ -1,10 +1,9 @@
-// @ts-check
 /**
  * Feature 3 – Product Details
  * Covers: page structure, price visibility, image display,
  *         successful add-to-cart, breadcrumb navigation
  */
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../fixtures/reportingHooks');
 const { ProductPage }  = require('../../pages/ProductPage');
 const { testData }     = require('../../utils/testData');
 

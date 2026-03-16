@@ -1,9 +1,8 @@
-// @ts-check
 /**
  * Feature 2 - Product Search
  * Covers: valid search queries, no-result behavior, and header search interaction.
  */
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../fixtures/reportingHooks');
 
 test.describe('Feature 2 - Product Search @regression', () => {
   test('TC_SRCH_01 - Keyword "eye" returns product links @smoke', async ({ page }) => {

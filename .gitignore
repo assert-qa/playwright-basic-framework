@@ -2,9 +2,10 @@
 # Playwright
 node_modules/
 /test-results/
+/reports/test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
 
-.env.example/
+.env.example

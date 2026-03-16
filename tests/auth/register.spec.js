@@ -1,10 +1,9 @@
-// @ts-check
 /**
  * Feature 1 – Authentication: Register
  * Covers: page structure, empty form validation, successful registration,
  *         duplicate login name, mismatched passwords
  */
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../fixtures/reportingHooks');
 const { RegisterPage } = require('../../pages/RegisterPage');
 const { testData }     = require('../../utils/testData');
 

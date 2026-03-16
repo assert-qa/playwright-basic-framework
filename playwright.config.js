@@ -3,6 +3,8 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests',
+  // Keep Playwright artifacts under reports/ to avoid root-level test-results folder.
+  outputDir: 'reports/test-results',
   /* Maximum time one test can run for */
   timeout: 60 * 1000,
   expect: {
@@ -18,6 +20,7 @@ module.exports = defineConfig({
   reporter: [
     ['html', { outputFolder: 'reports/html-report', open: 'never' }],
     ['json', { outputFile: 'reports/json-report/test-results.json' }],
+    ['allure-playwright', { resultsDir: 'reports/allure-results', detail: true, suiteTitle: false }],
     ['list'],
   ],
 

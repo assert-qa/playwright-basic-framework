@@ -1,30 +1,26 @@
 # Latest Test Summary
 
-Generated at: 2026-03-16T14:23:07.681Z
+Generated at: 2026-03-16T14:48:37.490Z
 
 ## Overall
 
-- Total: 32
-- Passed: 31
+- Total: 1
+- Passed: 0
 - Failed: 0
 - Skipped: 1
 - Flaky (pass on retry): 0
-- Duration: 137.4 seconds
+- Duration: 2.6 seconds
 
 ## Tag Coverage
 
-- @smoke executed: 8
-- @regression executed: 32
+- @smoke executed: 1
+- @regression executed: 1
 
 ## Result by Feature
 
 | Feature | Total | Passed | Failed | Skipped |
 | --- | ---: | ---: | ---: | ---: |
-| auth | 11 | 10 | 0 | 1 |
-| cart | 5 | 5 | 0 | 0 |
-| checkout | 5 | 5 | 0 | 0 |
-| product | 6 | 6 | 0 | 0 |
-| search | 5 | 5 | 0 | 0 |
+| auth | 1 | 0 | 0 | 1 |
 
 ## Artifacts
 

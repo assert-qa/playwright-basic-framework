@@ -1,9 +1,8 @@
-// @ts-check
 /**
  * Feature 1 – Authentication: Login
  * Covers: valid login, invalid credentials, empty form, navigation to register
  */
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../fixtures/reportingHooks');
 const { LoginPage }    = require('../../pages/LoginPage');
 const { testData }     = require('../../utils/testData');
 
