@@ -75,20 +75,20 @@
   },
   "suites": [
     {
-      "title": "auth\\login.spec.js",
-      "file": "auth/login.spec.js",
+      "title": "search\\search.spec.js",
+      "file": "search/search.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Feature 1 – Authentication: Login @regression",
-          "file": "auth/login.spec.js",
-          "line": 9,
+          "title": "Feature 2 - Product Search @regression",
+          "file": "search/search.spec.js",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "TC_AUTH_L06 – Login with valid credentials navigates to My Account @smoke",
+              "title": "TC_SRCH_01 - Keyword \"eye\" returns product links @smoke",
               "ok": true,
               "tags": [
                 "regression",
@@ -97,57 +97,175 @@
               "tests": [
                 {
                   "timeout": 60000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "description": "Skipped: set TEST_LOGIN_NAME and TEST_PASSWORD in .env to enable this test",
-                      "location": {
-                        "file": "D:\\CodeProject\\Javascript\\Playwright\\playwright_framework\\basic_framework\\tests\\auth\\login.spec.js",
-                        "line": 49,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
+                  "annotations": [],
+                  "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "skipped",
-                      "duration": 2618,
+                      "status": "passed",
+                      "duration": 6026,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-16T14:48:34.605Z",
-                      "annotations": [
-                        {
-                          "type": "skip",
-                          "description": "Skipped: set TEST_LOGIN_NAME and TEST_PASSWORD in .env to enable this test",
-                          "location": {
-                            "file": "D:\\CodeProject\\Javascript\\Playwright\\playwright_framework\\basic_framework\\tests\\auth\\login.spec.js",
-                            "line": 49,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "screenshot-skipped",
-                          "contentType": "image/png",
-                          "path": "D:\\CodeProject\\Javascript\\Playwright\\playwright_framework\\basic_framework\\reports\\test-results\\auth-login-Feature-1-–-Aut-a0b9b-vigates-to-My-Account-smoke-chromium\\attachments\\screenshot-skipped-ffcc178ff0dd5c1dbb574a7534ac834378ebba4c.png"
-                        }
-                      ]
+                      "startTime": "2026-03-16T15:08:12.846Z",
+                      "annotations": [],
+                      "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
-              "id": "626483fc77c4bb72c38c-eb517ac0efc87f064748",
-              "file": "auth/login.spec.js",
-              "line": 47,
+              "id": "131f13c44429c94303f6-7d24909fd076080fb0de",
+              "file": "search/search.spec.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "TC_SRCH_02 - Keyword \"shampoo\" returns product links",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3094,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T15:08:18.976Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "131f13c44429c94303f6-2c539329be664c37ac7b",
+              "file": "search/search.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "TC_SRCH_03 - Gibberish keyword shows no-results message",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2456,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T15:08:22.082Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "131f13c44429c94303f6-1be42c2cb882a6ef5bcd",
+              "file": "search/search.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "TC_SRCH_04 - Header search from home opens search page",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3741,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T15:08:24.546Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "131f13c44429c94303f6-7bd9b4a3c375b9cce830",
+              "file": "search/search.spec.js",
+              "line": 28,
+              "column": 3
+            },
+            {
+              "title": "TC_SRCH_05 - Empty keyword keeps search page functional",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3238,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T15:08:28.296Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "131f13c44429c94303f6-a8a6dca9a284c409d55b",
+              "file": "search/search.spec.js",
+              "line": 37,
               "column": 3
             }
           ]
@@ -157,10 +275,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-16T14:48:33.748Z",
-    "duration": 3687.0969999999998,
-    "expected": 0,
-    "skipped": 1,
+    "startTime": "2026-03-16T15:08:11.992Z",
+    "duration": 19628.788,
+    "expected": 5,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

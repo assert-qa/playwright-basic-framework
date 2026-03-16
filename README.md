@@ -1,4 +1,4 @@
-# Basic Playwright Framework
+# Playwright Javascript Framework
 
 End-to-end UI automation framework for `https://automationteststore.com` using Playwright with Page Object Model, tag-based execution, and multi-format reporting.
 
