@@ -1,0 +1,27 @@
+{
+  "name": "basic_framework",
+  "version": "1.0.0",
+  "description": "Playwright E2E Test Framework – automationteststore.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/run-tests-with-summary.js",
+    "summary:latest": "node scripts/generate-latest-summary.js",
+    "test:smoke": "node scripts/run-tests-with-summary.js --grep @smoke",
+    "test:regression": "node scripts/run-tests-with-summary.js --grep @regression",
+    "test:auth": "npx playwright test tests/auth/",
+    "test:search": "npx playwright test tests/search/",
+    "test:product": "npx playwright test tests/product/",
+    "test:cart": "npx playwright test tests/cart/",
+    "test:checkout": "npx playwright test tests/checkout/",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report reports/html-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
