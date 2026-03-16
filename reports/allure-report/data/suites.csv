@@ -1,2 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2583","TC_AUTH_L06 – Login with valid credentials navigates to My Account @smoke","chromium","2026-03-16","skipped","2026-03-16","Feature 1 – Authentication: Login @regression","","",""
